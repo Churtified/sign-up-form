@@ -8,35 +8,56 @@
     <title>Sign-Up-Form</title>
 </head>
 <body>
-    <div class="left-container">
-        <img src="" alt="">
-    </div>
-    <div class="right-container">
-        <div class="sub-text">
-            <p>
-                This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                You know you want to.
-            </p>
+    <div class="container">
+        <div class="left-container">
+            <div class="logo">
+                <img src="img/odin-lined.png" alt="odin-logo" class="odin-logo">
+                <h1 class="odin-text">Odin</h1>
+            </div>
         </div>
-        <div class="form-container">
-            <h2>Let's do this!</h2>
-            <form action="">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" required>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" required>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" id="phone-number" name="phone-number" required>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <button>Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
+        <div class="right-container">
+            <div class="sub-text">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                </p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="extra-text">You <em>know</em> you want to.</p>
+            </div>
+            <form action="#">
+                <div class="form-container">
+                    <div class="input"></div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" id="phone-number" name="phone-number" minlength="10" maxlength="10">
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Create Account</button>
+                    </div>
+                </div>
             </form>
+            <div class="log-in">
+                <p>Already have an account?</p><a href="#">Log in</a>
+            </div>
         </div>
     </div>
 </body>
